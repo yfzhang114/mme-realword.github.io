@@ -92,30 +92,31 @@
           </h2>
           
           <div class="is-size-5 publication-authors", style="width: 100%; margin: 15px auto;", >
-            <span class="author-block">Yi-Fan Zhang<sup style="color:#18acfb;">1</sup>,</span>
-            <span class="author-block">Huanyu Zhang<sup style="color:#18acfb;">1</sup>,</span>
-            <span class="author-block">Haochen Tian<sup style="color:#18acfb;">1</sup>,</span>
+            <span class="author-block">Yi-Fan Zhang<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
+            <span class="author-block">Huanyu Zhang<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
+            <span class="author-block">Haochen Tian<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
             <span class="author-block">Chaoyou Fu<sup style="color:#9400D3">2</sup>,</span>
-            <span class="author-block">Shuangqing Zhang<sup style="color:#18acfb;">1</sup>,</span>
-            <span class="author-block">Junfei Wu<sup style="color:#18acfb;">1</sup>,</span>
+            <span class="author-block">Shuangqing Zhang<sup style="color:#9400D3">2</sup>,</span>
+            <span class="author-block">Junfei Wu<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
             <span class="author-block">Feng Li<sup style="color:#ed4b82">3</sup>,</span>
-            <span class="author-block">Kun Wang<sup style="color:#ffac33">4</sup>,</span>
-            <span class="author-block">Qingsong Wen<sup style="color:#6fbf73">5</sup>,</span>
-            <span class="author-block">Zhang Zhang<sup style="color:#18acfb;">1</sup>,</span>
-            <span class="author-block">Liang Wang<sup style="color:#18acfb;">1</sup>,</span>
-            <span class="author-block">Rong Jin<sup style="color:#18acfb;">1</sup>,</span>
-            <span class="author-block">Tieniu Tan<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#9400D3">2</sup></span>
-            <br><span class="author-block", style="font-size:20px"><a href="http://www.cripac.ia.ac.cn/CN/model/index.htm">CASIA MAIS-NLPR</a></span></br>
+            <span class="author-block">Kun Wang<sup style="color:#ffac33">4</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
+            <span class="author-block">Qingsong Wen<sup style="color:#6fbf73">6</sup>,</span>
+            <span class="author-block">Zhang Zhang<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
+            <span class="author-block">Liang Wang<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup>,</span>
+            <span class="author-block">Rong Jin<sup style="color:#33ffd6;">7</sup>,</span>
+            <span class="author-block">Tieniu Tan<sup style="color:#18acfb;">1</sup><sup>,</sup><sup style="color:#9400D3">2</sup><sup>,</sup><sup style="color:#1a4ebf">5</sup></span>
+            <br><span class="author-block", style="font-size:25px"><a href="http://www.cripac.ia.ac.cn/CN/model/index.htm">CASIA MAIS-NLPR</a></span></br>
 
         </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup style="color:#18acfb">1</sup>CASIA,</span>
+            <span class="author-block"><sup style="color:#53bcf5">1</sup>CASIA,</span>
             <span class="author-block"><sup style="color:#9400D3">2</sup>NJU,</span>
             <span class="author-block"><sup style="color:#ed4b82">3</sup>HKUST,</span>
-            <span class="author-block"><sup style="color:#ffac33">4</sup>NIT,</span>
-            <span class="author-block"><sup style="color:#6fbf73">5</sup>Squirrel AI Learning,</span>
-            <span class="author-block"><sup style="color:#33ffd6">6</sup>Meta AI</span><br>
+            <span class="author-block"><sup style="color:#ffac33">4</sup>NTU,</span>
+            <span class="author-block"><sup style="color:#1a4ebf">5</sup>UCAS,</span>
+            <span class="author-block"><sup style="color:#6fbf73">6</sup>Squirrel AI Learning,</span>
+            <span class="author-block"><sup style="color:#33ffd6">7</sup>Meta AI</span><br>
             <!-- <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span> -->
           </div>
 
@@ -181,7 +182,7 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Introduction</h2>
+        <h2 class="title is-3" style="margin-top: -5%;">Introduction</h2>
         <div class="content has-text-justified">
           &nbsp;&nbsp;&nbsp;Comprehensive evaluation of Multimodal Large Language Models (MLLMs) has recently garnered widespread attention in the research community. However, we observe that existing benchmarks present several common barriers that make it difficult to measure the significant challenges that models face in the real world, including: 1) small data scale leading to large performance variance; 2) reliance on model-based annotations, resulting in significant model bias; 3) restricted data sources, often overlapping with existing benchmarks and posing a risk of data leakage; 4) insufficient task difficulty, especially caused by the limited image resolution, and discrimination.<br> 
 
@@ -1151,7 +1152,7 @@
           <h2 class="title is-3" style="margin-top: 30px;">Benchmark Statistics</h2>
           
           <!-- bing tu -->
-          <div class="box m-5">
+          <!-- <div class="box m-5">
             <div class="container-wrapper">
               <div id="container-task" style = "max-width: 100%;margin-left:10%;"></div>
               <div id="image-container">
@@ -1164,15 +1165,15 @@
               (Left) <strong>Image categories</strong>: Our benchmark covers 6 key domains and 14 sub-class image types. 
               <br> (Right) <strong>Comparison of MME-RealWorld with other benchmarks</strong>: highlights its status as the largest fully human-annotated dataset, 
               featuring the highest average resolution and the most challenging tasks, emphasizing its unprecedented scale and focus on real-world applications.<br/>
-          </p>
-          </div>
+            </p>
+          </div> -->
             
           <div class="box m-5">
             <div id="container-object">
               <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/echarts.min.js"></script>
               <script type="text/javascript" src="static/js/bingtu-object.js"></script>
             </div>
-            <p style="text-align: center; margin-top:3%;margin-left: auto; margin-right: auto; width: 100%;"> 
+            <p style="text-align: center; margin-top:3%;margin-left: auto; margin-right: auto; width: 80%;"> 
               <strong>Task Categories</strong>: Our benchmark spans 5 key domains and 43 sub-class tasks highly related to real-world scenarios, including 10,000 high-resolution images and 29,429 annotations.
             </p>
           </div>
@@ -1192,9 +1193,10 @@
 
           <div class="box m-5" >
             <div class="content has-text-centered">
-              <img src="static/images/resolution.png" alt="data-composition" style="max-width: 40%;"/>
-              <p style="text-align: center; margin-left: auto; margin-right: auto; width: 75%;" >
-                <strong> Resolution Comparison</strong>: MME-RealWorld features the highest image resolution among all open-source counterparts
+              <img src="static/images/exp_results/comparison.png" alt="data-composition" style="max-width: 60%;"/>
+              <p style="text-align: center; margin-left: auto; margin-right: auto; width: 80%;" >
+                <strong>Comparison of MME-RealWorld with other benchmarks</strong>: highlights its status as the largest fully human-annotated dataset, 
+              featuring the highest average resolution and the most challenging tasks, emphasizing its unprecedented scale and focus on real-world applications.<br/>
               </p>
             </div>
           </div>
