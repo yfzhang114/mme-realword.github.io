@@ -185,20 +185,20 @@
         <h2 class="title is-3" style="margin-top: -5%;">Introduction</h2>
         <div class="content has-text-justified">
           &nbsp;&nbsp;&nbsp;Existing Multimodal Large Language Model benchmarks present several common barriers that make it <strong>difficult to measure the significant challenges that models face in the real world</strong>, including:<br>  
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) small data scale leads to a large performance variance;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) reliance on model-based annotations results in restricted data quality;<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) insufficient task difficulty, especially caused by the limited image resolution.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;1. small data scale leads to a large performance variance;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;2. reliance on model-based annotations results in restricted data quality;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;3. insufficient task difficulty, especially caused by the limited image resolution.<br>
           
-          &nbsp;&nbsp;&nbsp;We present MME-RealWord, <strong>a benchmark meticulously designed to address real-world applications with practical relevance.</strong> 
-          Featuring 13,366 high-resolution images averaging 2,000 × 1,500 pixels, MME-RealWord poses substantial recognition challenges.
-           Our dataset encompasses 29,429 annotations across 43 tasks, all expertly curated by a team of 25 crowdsource workers and 7 MLLM experts. 
+          &nbsp;&nbsp;&nbsp;We present MME-RealWorld, <strong>a benchmark meticulously designed to address real-world applications with practical relevance.</strong> 
+          Featuring 13,366 high-resolution images averaging <strong>2,000 × 1,500</strong> pixels, MME-RealWorld poses substantial recognition challenges.
+           Our dataset encompasses <strong>29,429 annotations across 43 tasks</strong>, all expertly curated by a team of 25 crowdsource workers and 7 MLLM experts. 
            The main advantages of MME-RealWorld compared to existing MLLM benchmarks as follows:<br>
 
 
-            <strong>&nbsp;&nbsp;&nbsp;&nbsp;1. Scale:</strong>  with the efforts of a total of 32 volunteers, we have manually annotated 29,429 QA pairs focused on real-world scenarios, making this the largest fully human-annotated benchmark known to date.<br> 
+            <strong>&nbsp;&nbsp;&nbsp;&nbsp;1. Scale:</strong>  with the efforts of a total of 32 volunteers, we have manually annotated <strong>29,429 QA pairs</strong> focused on real-world scenarios, making this the largest fully human-annotated benchmark known to date.<br> 
             <strong>&nbsp;&nbsp;&nbsp;2. Data Quality.</strong> 1) Resolution: Many image details, such as a scoreboard in a sports event, carry critical information. These details can only be properly interpreted with high- resolution images, which are essential for providing meaningful assistance to humans. To the best of our knowledge, MME-RealWorld features the highest average image resolution among existing competitors. 2) Annotation: All annotations are manually completed, with a professional team cross-checking the results to ensure data quality.<br>
             <strong>&nbsp;&nbsp;&nbsp;3. Task Difficulty and Real-World Utility.</strong> We can see that even the most advanced models have not surpassed 60% accuracy. Additionally, many real-world tasks are significantly more difficult than those in traditional benchmarks. For example, in video monitoring, a model needs to count the presence of 133 vehicles, or in remote sensing, it must identify and count small objects on a map with an average resolution exceeding 5000×5000.<br>
-            <strong>&nbsp;&nbsp;4. MME-RealWorld-CN.</strong>  Existing Chinese benchmark is usually translated from its English version. This has two limitations: 1) Question-image mismatch. The image may relate to an English scenario, which is not intuitively connected to a Chinese question. 2) Translation mismatch. The machine translation is not always precise and perfect enough. We collect additional images that focus on Chinese scenarios, asking Chinese volunteers for annotation. This results in 5,917 QA pairs.<br>
+            <strong>&nbsp;&nbsp;4. MME-RealWorld-CN.</strong>  Existing Chinese benchmark is usually translated from its English version. This has two limitations: 1) Question-image mismatch. The image may relate to an English scenario, which is not intuitively connected to a Chinese question. 2) Translation mismatch. The machine translation is not always precise and perfect enough. We collect additional images that focus on Chinese scenarios, asking Chinese volunteers for annotation. This results in <strong>5,917 QA pairs.</strong><br>
         </div>
       </div>
     </div>
@@ -1399,7 +1399,7 @@
       <div class="column is-8">
         <div class="content">
           <p style="text-align: center;">
-            This website is adapted from <a href="https://video-mme.github.io/">Video-MME</a>, licensed under a <a rel="license"
+            This website is adapted from <a href="https://mme-realworld.github.io/">MME-RealWorld</a>, licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
