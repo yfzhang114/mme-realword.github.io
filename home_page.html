@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> MME-RealWorld </title>
-  <!-- <link rel="icon" href="./static/images/video-mme.png"> -->
+  <link rel="icon" href="./static/images/logo.png">
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -84,7 +84,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title is-bold">
-            <!-- <img src="static/images/video-mme.png" style="width:1.6em;vertical-align: middle" alt="Logo"/> -->
+            <img src="static/images/logo.png" style="width:1.8em;vertical-align: middle" alt="Logo"/>
             <span class="mme-realworld" style="vertical-align: middle;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)">MME-RealWorld</span>
             </h1>
           <h2 class="subtitle is-3 publication-subtitle ", style="width: 100%;margin-bottom: 20px;">
@@ -184,18 +184,21 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3" style="margin-top: -5%;">Introduction</h2>
         <div class="content has-text-justified">
-          &nbsp;&nbsp;&nbsp;Comprehensive evaluation of Multimodal Large Language Models (MLLMs) has recently garnered widespread attention in the research community. However, we observe that existing benchmarks present several common barriers that make it difficult to measure the significant challenges that models face in the real world, including: 1) small data scale leading to large performance variance; 2) reliance on model-based annotations, resulting in significant model bias; 3) restricted data sources, often overlapping with existing benchmarks and posing a risk of data leakage; 4) insufficient task difficulty, especially caused by the limited image resolution, and discrimination.<br> 
+          &nbsp;&nbsp;&nbsp;Existing Multimodal Large Language Model benchmarks present several common barriers that make it <strong>difficult to measure the significant challenges that models face in the real world</strong>, including:<br>  
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) small data scale leads to a large performance variance;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) reliance on model-based annotations results in restricted data quality;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) insufficient task difficulty, especially caused by the limited image resolution.<br>
+          
+          &nbsp;&nbsp;&nbsp;We present MME-RealWord, <strong>a benchmark meticulously designed to address real-world applications with practical relevance.</strong> 
+          Featuring 13,366 high-resolution images averaging 2,000 × 1,500 pixels, MME-RealWord poses substantial recognition challenges.
+           Our dataset encompasses 29,429 annotations across 43 tasks, all expertly curated by a team of 25 crowdsource workers and 7 MLLM experts. 
+           The main advantages of MME-RealWorld compared to existing MLLM benchmarks as follows:<br>
 
-          To tackle these issues, we introduce MME-RealWorld, <strong>which is the largest manually annotated dataset to date, featuring the highest resolution and a targeted focus on real-world applications</strong>. Initially, we collect more than 300K images from public datasets and the Internet, filtering 13,366 high-quality images for data annotation. With the participation of professional 25 annotators and 7 experts in MLLM, we annotate 29,429 question-answer pairs that cover 43 subtasks across five real-world scenarios, extremely challenging even for humans.
-          We conclude the main advantages of MME-RealWorld compared to existing MLLM benchmarks as follows:<br> 
 
-            <strong>&nbsp;&nbsp;&nbsp;Scale.</strong> With a team of 32 annotators, including several with professional expertise, we have annotated 29,429 QA pairs focused on real-world scenarios, making this the largest fully human-annotated benchmark known to date.<br> 
-            <strong>&nbsp;&nbsp;&nbsp;Quality.</strong>  1) Image Resolution: Many image details, such as a scoreboard in a sports event, carry critical information. These details can only be properly interpreted with high-resolution images, which are essential for providing meaningful assistance to users. To the best of our knowledge, MME-RealWorld features the highest average image resolution among all existing benchmarks. 2) Annotation: All annotations are manually completed, with a team of 7 experts cross-checking the results to ensure data quality and eliminate any obvious personal errors.<br>
-            <strong>&nbsp;&nbsp;&nbsp;Difficulty and Real-World Utility.</strong> Even the most advanced models have not surpassed 55% accuracy on basic perception tasks, with reasoning tasks proving to be even more challenging. Additionally, many real-world tasks are significantly more difficult than those in traditional VQA benchmarks. For example, in video monitoring, a model needs to count the presence of 133 vehicles, or in remote sensing, it must identify and count small objects on a map with an average resolution exceeding 5000×5000 pixels.<br>
-            <strong>&nbsp;&nbsp;&nbsp;MME-RealWorld-CN.</strong> Existing Chinese benchmark is usually translated from its English version. This has two problems: 
-              (1) Question-image mismatch. The image may relate to an English scene, which is not intuitively connected to a Chinese question.
-              (2) Translation mismatch, where machine translation is not precise and perfect enough.
-              We collect additional images and ensure that all images focus on Chinese scenarios, asking Chinese workers for annotation. This results in 5,917 QA pairs.
+            <strong>&nbsp;&nbsp;&nbsp;&nbsp;1. Scale:</strong>  with the efforts of a total of 32 volunteers, we have manually annotated 29,429 QA pairs focused on real-world scenarios, making this the largest fully human-annotated benchmark known to date.<br> 
+            <strong>&nbsp;&nbsp;&nbsp;2. Data Quality.</strong> 1) Resolution: Many image details, such as a scoreboard in a sports event, carry critical information. These details can only be properly interpreted with high- resolution images, which are essential for providing meaningful assistance to humans. To the best of our knowledge, MME-RealWorld features the highest average image resolution among existing competitors. 2) Annotation: All annotations are manually completed, with a professional team cross-checking the results to ensure data quality.<br>
+            <strong>&nbsp;&nbsp;&nbsp;3. Task Difficulty and Real-World Utility.</strong> We can see that even the most advanced models have not surpassed 60% accuracy. Additionally, many real-world tasks are significantly more difficult than those in traditional benchmarks. For example, in video monitoring, a model needs to count the presence of 133 vehicles, or in remote sensing, it must identify and count small objects on a map with an average resolution exceeding 5000×5000.<br>
+            <strong>&nbsp;&nbsp;4. MME-RealWorld-CN.</strong>  Existing Chinese benchmark is usually translated from its English version. This has two limitations: 1) Question-image mismatch. The image may relate to an English scenario, which is not intuitively connected to a Chinese question. 2) Translation mismatch. The machine translation is not always precise and perfect enough. We collect additional images that focus on Chinese scenarios, asking Chinese volunteers for annotation. This results in 5,917 QA pairs.<br>
         </div>
       </div>
     </div>
@@ -223,7 +226,7 @@
     <div class="columns is-centered">
       <div class="column is-full has-text-centered content">
 
-        <h2 class="title is-3" id="leaderboard">Leaderboard</h2>
+        <h2 class="title is-3" id="leaderboard" style="margin-top: -5%;">Leaderboard</h2>
         <div class="content">
           <p class="mt-3">Models are ranked according to their average performance on perception and reasoning tasks, from highest to lowest. 
             <strong>“OCR”, “RS”, “DT”, “MO” and “AD” </strong> each indicate a specific task domain: Optical Character Recognition in the Wild, Remote Sensing, Diagram and Table, Monitoring, and  Autonomous Driving, respectively. 
@@ -1079,7 +1082,6 @@
               
 
         </div>
-
       </div>
     </div>
 
@@ -1221,7 +1223,7 @@
           <div class="box m-5" >
             <div class="content has-text-centered">
               <img src="static/images/exp_results/comparison.png" alt="data-composition" style="max-width: 60%;"/>
-              <p style="text-align: center; margin-left: auto; margin-right: auto; width: 80%;" >
+              <p style="text-align: center; margin-left: auto; margin-top:1%;margin-right: auto; width: 80%;" >
                 <strong>Comparison of MME-RealWorld with other benchmarks</strong>: highlights its status as the largest fully human-annotated dataset, 
               featuring the highest average resolution and the most challenging tasks, emphasizing its unprecedented scale and focus on real-world applications.<br/>
               </p>
