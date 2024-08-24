@@ -44,7 +44,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-image: url('background_cross.png');
+  background-image: url('../../background_cross.png');
   background-repeat: no-repeat; /* 不重复背景图 */
   background-size: auto 100%; /* 背景图高度适应容器，高度100% */
   background-color: var(--secondary-color);
@@ -62,7 +62,7 @@ body {
   background-color: var(--secondary-color);
 
   /* 应用动画 */
-  animation: moveBackground 5s linear forwards;
+  animation: moveBackground 10s linear forwards;
 }
 
 .header-top-screen {
